@@ -1,0 +1,709 @@
+2026-06-22 10:35:35,468 [2] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7106
+2026-06-22 10:35:35,488 [2] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5025
+2026-06-22 10:35:35,783 [2] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2026-06-22 10:35:35,783 [2] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2026-06-22 10:35:35,784 [2] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Visual Studio\SimplyFly\SimplyFly
+2026-06-22 12:32:39,777 [2] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7106
+2026-06-22 12:32:39,790 [2] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5025
+2026-06-22 12:32:40,047 [2] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2026-06-22 12:32:40,048 [2] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2026-06-22 12:32:40,048 [2] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Visual Studio\SimplyFly\SimplyFly
+2026-06-22 12:50:45,233 [2] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7106
+2026-06-22 12:50:45,250 [2] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5025
+2026-06-22 12:50:45,564 [2] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2026-06-22 12:50:45,564 [2] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2026-06-22 12:50:45,564 [2] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Visual Studio\SimplyFly\SimplyFly
+2026-06-22 15:14:07,899 [2] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (41ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2026-06-22 15:14:07,919 [2] INFO  Microsoft.EntityFrameworkCore.Migrations - Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-06-22 15:14:08,018 [2] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (96ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-06-22 15:14:08,106 [2] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-06-22 15:14:08,115 [2] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2026-06-22 15:14:08,116 [2] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-06-22 15:14:08,168 [2] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (50ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-06-22 15:14:08,178 [2] INFO  Microsoft.EntityFrameworkCore.Migrations - Applying migration '20260622094352_UpdatePaymentModel'.
+2026-06-22 15:14:08,209 [2] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260622094352_UpdatePaymentModel', N'10.0.9');
+2026-06-22 15:14:08,217 [2] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-06-22 15:14:40,237 [2] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7106
+2026-06-22 15:14:40,251 [2] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5025
+2026-06-22 15:14:40,444 [2] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2026-06-22 15:14:40,445 [2] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2026-06-22 15:14:40,445 [2] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Visual Studio\SimplyFly\SimplyFly
+2026-06-22 15:15:46,343 [2] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7106
+2026-06-22 15:15:46,358 [2] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5025
+2026-06-22 15:15:46,606 [2] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2026-06-22 15:15:46,606 [2] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2026-06-22 15:15:46,606 [2] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Visual Studio\SimplyFly\SimplyFly
+2026-06-22 15:17:47,963 [19] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (303ms) [Parameters=[@ToLower='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Address], [u].[ContactNumber], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[RoleId], [r].[RoleId], [r].[RoleName]
+FROM [Users] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[RoleId]
+WHERE LOWER([u].[Email]) = @ToLower
+2026-06-22 15:18:54,807 [22] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (52ms) [Parameters=[@ToLower='?' (Size = 4000), @ToLower1='?' (Size = 4000), @date_Date='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT [s].[ScheduleId], [s].[ArrivalTime], [s].[DepartureTime], [s].[FlightId], [f].[FlightId], [f].[Destination], [f].[FlightName], [f].[FlightNumber], [f].[Origin], [f].[OwnerId], [f0].[CabinId], [f0].[AvailableSeats], [f0].[CabinBaggage], [f0].[CabinType], [f0].[CheckInBaggage], [f0].[Price], [f0].[ScheduleId]
+FROM [Schedules] AS [s]
+INNER JOIN [Flights] AS [f] ON [s].[FlightId] = [f].[FlightId]
+LEFT JOIN [FlightCabins] AS [f0] ON [s].[ScheduleId] = [f0].[ScheduleId]
+WHERE LOWER([f].[Origin]) = @ToLower AND LOWER([f].[Destination]) = @ToLower1 AND CONVERT(date, [s].[DepartureTime]) = @date_Date AND [s].[DepartureTime] > GETUTCDATE()
+ORDER BY [s].[ScheduleId], [f].[FlightId]
+2026-06-22 15:19:12,667 [23] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (11ms) [Parameters=[@ToLower='?' (Size = 4000), @ToLower1='?' (Size = 4000), @date_Date='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT [s].[ScheduleId], [s].[ArrivalTime], [s].[DepartureTime], [s].[FlightId], [f].[FlightId], [f].[Destination], [f].[FlightName], [f].[FlightNumber], [f].[Origin], [f].[OwnerId], [f0].[CabinId], [f0].[AvailableSeats], [f0].[CabinBaggage], [f0].[CabinType], [f0].[CheckInBaggage], [f0].[Price], [f0].[ScheduleId]
+FROM [Schedules] AS [s]
+INNER JOIN [Flights] AS [f] ON [s].[FlightId] = [f].[FlightId]
+LEFT JOIN [FlightCabins] AS [f0] ON [s].[ScheduleId] = [f0].[ScheduleId]
+WHERE LOWER([f].[Origin]) = @ToLower AND LOWER([f].[Destination]) = @ToLower1 AND CONVERT(date, [s].[DepartureTime]) = @date_Date AND [s].[DepartureTime] > GETUTCDATE()
+ORDER BY [s].[ScheduleId], [f].[FlightId]
+2026-06-22 15:19:21,633 [22] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@ToLower='?' (Size = 4000), @ToLower1='?' (Size = 4000), @date_Date='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT [s].[ScheduleId], [s].[ArrivalTime], [s].[DepartureTime], [s].[FlightId], [f].[FlightId], [f].[Destination], [f].[FlightName], [f].[FlightNumber], [f].[Origin], [f].[OwnerId], [f0].[CabinId], [f0].[AvailableSeats], [f0].[CabinBaggage], [f0].[CabinType], [f0].[CheckInBaggage], [f0].[Price], [f0].[ScheduleId]
+FROM [Schedules] AS [s]
+INNER JOIN [Flights] AS [f] ON [s].[FlightId] = [f].[FlightId]
+LEFT JOIN [FlightCabins] AS [f0] ON [s].[ScheduleId] = [f0].[ScheduleId]
+WHERE LOWER([f].[Origin]) = @ToLower AND LOWER([f].[Destination]) = @ToLower1 AND CONVERT(date, [s].[DepartureTime]) = @date_Date AND [s].[DepartureTime] > GETUTCDATE()
+ORDER BY [s].[ScheduleId], [f].[FlightId]
+2026-06-22 15:20:36,749 [3] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (11ms) [Parameters=[@cabinId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [f].[CabinId], [f].[AvailableSeats], [f].[CabinBaggage], [f].[CabinType], [f].[CheckInBaggage], [f].[Price], [f].[ScheduleId], [s].[ScheduleId], [s].[ArrivalTime], [s].[DepartureTime], [s].[FlightId], [f0].[FlightId], [f0].[Destination], [f0].[FlightName], [f0].[FlightNumber], [f0].[Origin], [f0].[OwnerId]
+FROM [FlightCabins] AS [f]
+INNER JOIN [Schedules] AS [s] ON [f].[ScheduleId] = [s].[ScheduleId]
+INNER JOIN [Flights] AS [f0] ON [s].[FlightId] = [f0].[FlightId]
+WHERE [f].[CabinId] = @cabinId
+2026-06-22 15:20:36,881 [3] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (70ms) [Parameters=[@scheduleId='?' (DbType = Int32), @cabinId='?' (DbType = Int32), @seatNumbers1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [BookedSeats] AS [b]
+        INNER JOIN [FlightCabins] AS [f] ON [b].[CabinId] = [f].[CabinId]
+        INNER JOIN [Bookings] AS [b0] ON [b].[BookingId] = [b0].[BookingId]
+        WHERE [f].[ScheduleId] = @scheduleId AND [b].[CabinId] = @cabinId AND [b].[SeatNumber] = @seatNumbers1 AND [b0].[BookingStatus] <> N'Cancelled') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-06-22 15:20:37,128 [24] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (25ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Bookings] ([BookingDate], [BookingStatus], [ScheduleId], [TotalAmount], [UserId])
+OUTPUT INSERTED.[BookingId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-06-22 15:20:37,216 [14] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (20ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p9='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p8='?' (DbType = Int32), @p10='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p11='?' (DbType = Int32), @p12='?' (DbType = DateTime2), @p13='?' (Size = 4000), @p14='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [BookedSeats] ([BookingId], [CabinId], [SeatNumber])
+OUTPUT INSERTED.[SeatId]
+VALUES (@p0, @p1, @p2);
+UPDATE [FlightCabins] SET [AvailableSeats] = @p3, [CabinBaggage] = @p4, [CabinType] = @p5, [CheckInBaggage] = @p6, [Price] = @p7, [ScheduleId] = @p8
+OUTPUT 1
+WHERE [CabinId] = @p9;
+INSERT INTO [Payments] ([Amount], [BookingId], [PaymentDate], [RefundStatus], [TransactionStatus])
+OUTPUT INSERTED.[PaymentId]
+VALUES (@p10, @p11, @p12, @p13, @p14);
+2026-06-22 15:21:06,428 [29] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (24ms) [Parameters=[@userId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [b].[BookingId], [b].[BookingDate], [b].[BookingStatus], [b].[ScheduleId], [b].[TotalAmount], [b].[UserId], [s].[ScheduleId], [f].[FlightId], [p].[PaymentId], [b0].[SeatId], [b0].[BookingId], [b0].[CabinId], [b0].[SeatNumber], [s].[ArrivalTime], [s].[DepartureTime], [s].[FlightId], [f].[Destination], [f].[FlightName], [f].[FlightNumber], [f].[Origin], [f].[OwnerId], [p].[Amount], [p].[BookingId], [p].[PaymentDate], [p].[RefundStatus], [p].[TransactionStatus]
+FROM [Bookings] AS [b]
+INNER JOIN [Schedules] AS [s] ON [b].[ScheduleId] = [s].[ScheduleId]
+INNER JOIN [Flights] AS [f] ON [s].[FlightId] = [f].[FlightId]
+LEFT JOIN [Payments] AS [p] ON [b].[BookingId] = [p].[BookingId]
+LEFT JOIN [BookedSeats] AS [b0] ON [b].[BookingId] = [b0].[BookingId]
+WHERE [b].[UserId] = @userId
+ORDER BY [b].[BookingDate] DESC, [b].[BookingId], [s].[ScheduleId], [f].[FlightId], [p].[PaymentId]
+2026-06-22 15:22:05,748 [31] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@bookingId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [s].[BookingId], [s].[BookingDate], [s].[BookingStatus], [s].[ScheduleId], [s].[TotalAmount], [s].[UserId], [s].[PaymentId], [b0].[SeatId], [b0].[BookingId], [b0].[CabinId], [b0].[SeatNumber], [s].[Amount], [s].[BookingId0], [s].[PaymentDate], [s].[RefundStatus], [s].[TransactionStatus]
+FROM (
+    SELECT TOP(1) [b].[BookingId], [b].[BookingDate], [b].[BookingStatus], [b].[ScheduleId], [b].[TotalAmount], [b].[UserId], [p].[PaymentId], [p].[Amount], [p].[BookingId] AS [BookingId0], [p].[PaymentDate], [p].[RefundStatus], [p].[TransactionStatus]
+    FROM [Bookings] AS [b]
+    LEFT JOIN [Payments] AS [p] ON [b].[BookingId] = [p].[BookingId]
+    WHERE [b].[BookingId] = @bookingId
+) AS [s]
+LEFT JOIN [BookedSeats] AS [b0] ON [s].[BookingId] = [b0].[BookingId]
+ORDER BY [s].[BookingId], [s].[PaymentId]
+2026-06-22 15:22:23,610 [31] ERROR SimplyFly.Middlewares.GlobalExceptionMiddleware - An unhandled exception occurred during the request.
+SimplyFly.Exceptions.BookingCancellationException: Booking cannot be cancelled or was already processed.
+   at SimplyFly.Services.Implementations.BookingService.CancelBookingAsync(Int32 bookingId) in D:\Visual Studio\SimplyFly\SimplyFly\Services\Implementations\BookingService.cs:line 84
+   at SimplyFly.Controllers.BookingsController.CancelBooking(Int32 id) in D:\Visual Studio\SimplyFly\SimplyFly\Controllers\BookingsController.cs:line 44
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at SimplyFly.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\Visual Studio\SimplyFly\SimplyFly\Middlewares\GlobalExceptionMiddleware.cs:line 22
+2026-06-22 15:22:45,889 [30] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (20ms) [Parameters=[@bookingId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [s].[BookingId], [s].[BookingDate], [s].[BookingStatus], [s].[ScheduleId], [s].[TotalAmount], [s].[UserId], [s].[PaymentId], [b0].[SeatId], [b0].[BookingId], [b0].[CabinId], [b0].[SeatNumber], [s].[Amount], [s].[BookingId0], [s].[PaymentDate], [s].[RefundStatus], [s].[TransactionStatus]
+FROM (
+    SELECT TOP(1) [b].[BookingId], [b].[BookingDate], [b].[BookingStatus], [b].[ScheduleId], [b].[TotalAmount], [b].[UserId], [p].[PaymentId], [p].[Amount], [p].[BookingId] AS [BookingId0], [p].[PaymentDate], [p].[RefundStatus], [p].[TransactionStatus]
+    FROM [Bookings] AS [b]
+    LEFT JOIN [Payments] AS [p] ON [b].[BookingId] = [p].[BookingId]
+    WHERE [b].[BookingId] = @bookingId
+) AS [s]
+LEFT JOIN [BookedSeats] AS [b0] ON [s].[BookingId] = [b0].[BookingId]
+ORDER BY [s].[BookingId], [s].[PaymentId]
+2026-06-22 15:22:45,904 [30] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (12ms) [Parameters=[@cabinId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [f].[CabinId], [f].[AvailableSeats], [f].[CabinBaggage], [f].[CabinType], [f].[CheckInBaggage], [f].[Price], [f].[ScheduleId], [s].[ScheduleId], [s].[ArrivalTime], [s].[DepartureTime], [s].[FlightId], [f0].[FlightId], [f0].[Destination], [f0].[FlightName], [f0].[FlightNumber], [f0].[Origin], [f0].[OwnerId]
+FROM [FlightCabins] AS [f]
+INNER JOIN [Schedules] AS [s] ON [f].[ScheduleId] = [s].[ScheduleId]
+INNER JOIN [Flights] AS [f0] ON [s].[FlightId] = [f0].[FlightId]
+WHERE [f].[CabinId] = @cabinId
+2026-06-22 15:22:45,941 [29] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (21ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32), @p12='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p11='?' (DbType = Int32), @p18='?' (DbType = Int32), @p13='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p14='?' (DbType = Int32), @p15='?' (DbType = DateTime2), @p16='?' (Size = 4000), @p17='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Bookings] SET [BookingDate] = @p0, [BookingStatus] = @p1, [ScheduleId] = @p2, [TotalAmount] = @p3, [UserId] = @p4
+OUTPUT 1
+WHERE [BookingId] = @p5;
+UPDATE [FlightCabins] SET [AvailableSeats] = @p6, [CabinBaggage] = @p7, [CabinType] = @p8, [CheckInBaggage] = @p9, [Price] = @p10, [ScheduleId] = @p11
+OUTPUT 1
+WHERE [CabinId] = @p12;
+UPDATE [Payments] SET [Amount] = @p13, [BookingId] = @p14, [PaymentDate] = @p15, [RefundStatus] = @p16, [TransactionStatus] = @p17
+OUTPUT 1
+WHERE [PaymentId] = @p18;
+2026-06-22 15:23:30,958 [26] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (11ms) [Parameters=[@ToLower='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Address], [u].[ContactNumber], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[RoleId], [r].[RoleId], [r].[RoleName]
+FROM [Users] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[RoleId]
+WHERE LOWER([u].[Email]) = @ToLower
+2026-06-22 15:23:37,973 [26] ERROR SimplyFly.Middlewares.GlobalExceptionMiddleware - An unhandled exception occurred during the request.
+SimplyFly.Exceptions.InvalidCredentialsException: Invalid email or password.
+   at SimplyFly.Services.Implementations.AuthService.LoginAsync(LoginDto loginDto) in D:\Visual Studio\SimplyFly\SimplyFly\Services\Implementations\AuthService.cs:line 40
+   at SimplyFly.Controllers.AuthController.Login(LoginDto loginDto) in D:\Visual Studio\SimplyFly\SimplyFly\Controllers\AuthController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at SimplyFly.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\Visual Studio\SimplyFly\SimplyFly\Middlewares\GlobalExceptionMiddleware.cs:line 22
+2026-06-22 15:24:29,209 [26] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (10ms) [Parameters=[@ToLower='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Address], [u].[ContactNumber], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[RoleId], [r].[RoleId], [r].[RoleName]
+FROM [Users] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[RoleId]
+WHERE LOWER([u].[Email]) = @ToLower
+2026-06-22 15:24:36,138 [26] ERROR SimplyFly.Middlewares.GlobalExceptionMiddleware - An unhandled exception occurred during the request.
+SimplyFly.Exceptions.InvalidCredentialsException: Invalid email or password.
+   at SimplyFly.Services.Implementations.AuthService.LoginAsync(LoginDto loginDto) in D:\Visual Studio\SimplyFly\SimplyFly\Services\Implementations\AuthService.cs:line 40
+   at SimplyFly.Controllers.AuthController.Login(LoginDto loginDto) in D:\Visual Studio\SimplyFly\SimplyFly\Controllers\AuthController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at SimplyFly.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\Visual Studio\SimplyFly\SimplyFly\Middlewares\GlobalExceptionMiddleware.cs:line 22
+2026-06-22 15:24:45,122 [26] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@ToLower='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Address], [u].[ContactNumber], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[RoleId], [r].[RoleId], [r].[RoleName]
+FROM [Users] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[RoleId]
+WHERE LOWER([u].[Email]) = @ToLower
+2026-06-22 15:26:54,220 [29] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (124ms) [Parameters=[@ownerId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [b].[BookingId], [b].[BookingDate], [b].[BookingStatus], [b].[ScheduleId], [b].[TotalAmount], [b].[UserId], [u].[UserId], [u].[Address], [u].[ContactNumber], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[RoleId], [s].[ScheduleId], [f].[FlightId], [b0].[SeatId], [b0].[BookingId], [b0].[CabinId], [b0].[SeatNumber], [s].[ArrivalTime], [s].[DepartureTime], [s].[FlightId], [f].[Destination], [f].[FlightName], [f].[FlightNumber], [f].[Origin], [f].[OwnerId]
+FROM [Bookings] AS [b]
+INNER JOIN [Schedules] AS [s] ON [b].[ScheduleId] = [s].[ScheduleId]
+INNER JOIN [Flights] AS [f] ON [s].[FlightId] = [f].[FlightId]
+INNER JOIN [Users] AS [u] ON [b].[UserId] = [u].[UserId]
+LEFT JOIN [BookedSeats] AS [b0] ON [b].[BookingId] = [b0].[BookingId]
+WHERE [f].[OwnerId] = @ownerId
+ORDER BY [b].[BookingId], [s].[ScheduleId], [f].[FlightId], [u].[UserId]
+2026-06-22 15:30:07,897 [26] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (22ms) [Parameters=[@bookingId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[PaymentId], [p].[Amount], [p].[BookingId], [p].[PaymentDate], [p].[RefundStatus], [p].[TransactionStatus]
+FROM [Payments] AS [p]
+WHERE [p].[BookingId] = @bookingId
+2026-06-22 15:30:07,935 [26] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (28ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Payments] SET [Amount] = @p0, [BookingId] = @p1, [PaymentDate] = @p2, [RefundStatus] = @p3, [TransactionStatus] = @p4
+OUTPUT 1
+WHERE [PaymentId] = @p5;
+2026-06-22 15:30:36,766 [31] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (25ms) [Parameters=[@ownerId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [b].[BookingId], [b].[BookingDate], [b].[BookingStatus], [b].[ScheduleId], [b].[TotalAmount], [b].[UserId], [u].[UserId], [u].[Address], [u].[ContactNumber], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[RoleId], [s].[ScheduleId], [f].[FlightId], [b0].[SeatId], [b0].[BookingId], [b0].[CabinId], [b0].[SeatNumber], [s].[ArrivalTime], [s].[DepartureTime], [s].[FlightId], [f].[Destination], [f].[FlightName], [f].[FlightNumber], [f].[Origin], [f].[OwnerId]
+FROM [Bookings] AS [b]
+INNER JOIN [Schedules] AS [s] ON [b].[ScheduleId] = [s].[ScheduleId]
+INNER JOIN [Flights] AS [f] ON [s].[FlightId] = [f].[FlightId]
+INNER JOIN [Users] AS [u] ON [b].[UserId] = [u].[UserId]
+LEFT JOIN [BookedSeats] AS [b0] ON [b].[BookingId] = [b0].[BookingId]
+WHERE [f].[OwnerId] = @ownerId
+ORDER BY [b].[BookingId], [s].[ScheduleId], [f].[FlightId], [u].[UserId]
+2026-06-22 15:31:39,519 [14] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (23ms) [Parameters=[@ToLower='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Address], [u].[ContactNumber], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[RoleId], [r].[RoleId], [r].[RoleName]
+FROM [Users] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[RoleId]
+WHERE LOWER([u].[Email]) = @ToLower
+2026-06-22 15:32:04,966 [29] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[Address], [u].[ContactNumber], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[RoleId], [r].[RoleId], [r].[RoleName]
+FROM [Users] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[RoleId]
+2026-06-22 15:32:35,438 [14] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [b].[BookingId], [b].[BookingDate], [b].[BookingStatus], [b].[ScheduleId], [b].[TotalAmount], [b].[UserId], [u].[UserId], [u].[Address], [u].[ContactNumber], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[RoleId], [s].[ScheduleId], [f].[FlightId], [b0].[SeatId], [b0].[BookingId], [b0].[CabinId], [b0].[SeatNumber], [s].[ArrivalTime], [s].[DepartureTime], [s].[FlightId], [f].[Destination], [f].[FlightName], [f].[FlightNumber], [f].[Origin], [f].[OwnerId]
+FROM [Bookings] AS [b]
+INNER JOIN [Users] AS [u] ON [b].[UserId] = [u].[UserId]
+INNER JOIN [Schedules] AS [s] ON [b].[ScheduleId] = [s].[ScheduleId]
+INNER JOIN [Flights] AS [f] ON [s].[FlightId] = [f].[FlightId]
+LEFT JOIN [BookedSeats] AS [b0] ON [b].[BookingId] = [b0].[BookingId]
+ORDER BY [b].[BookingId], [u].[UserId], [s].[ScheduleId], [f].[FlightId]
+2026-06-22 15:32:55,387 [14] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [f].[FlightId], [f].[Destination], [f].[FlightName], [f].[FlightNumber], [f].[Origin], [f].[OwnerId], [u].[UserId], [u].[Address], [u].[ContactNumber], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[RoleId]
+FROM [Flights] AS [f]
+INNER JOIN [Users] AS [u] ON [f].[OwnerId] = [u].[UserId]
+2026-06-22 16:43:59,750 [2] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:7106
+2026-06-22 16:43:59,847 [2] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5025
+2026-06-22 16:44:00,337 [2] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2026-06-22 16:44:00,342 [2] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2026-06-22 16:44:00,343 [2] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\Visual Studio\SimplyFly\SimplyFly
+2026-06-22 16:44:45,534 [14] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (351ms) [Parameters=[@ToLower='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Address], [u].[ContactNumber], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[RoleId], [r].[RoleId], [r].[RoleName]
+FROM [Users] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[RoleId]
+WHERE LOWER([u].[Email]) = @ToLower
+2026-06-22 16:45:46,526 [16] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (71ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Flights] ([Destination], [FlightName], [FlightNumber], [Origin], [OwnerId])
+OUTPUT INSERTED.[FlightId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-06-22 16:47:16,178 [23] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (30ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Schedules] ([ArrivalTime], [DepartureTime], [FlightId])
+OUTPUT INSERTED.[ScheduleId]
+VALUES (@p0, @p1, @p2);
+2026-06-22 16:47:16,209 [23] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (17ms) [Parameters=[@p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p8='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [FlightCabins] ([AvailableSeats], [CabinBaggage], [CabinType], [CheckInBaggage], [Price], [ScheduleId])
+OUTPUT INSERTED.[CabinId]
+VALUES (@p3, @p4, @p5, @p6, @p7, @p8);
+2026-06-22 16:47:40,060 [21] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (60ms) [Parameters=[@ownerId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [b].[BookingId], [b].[BookingDate], [b].[BookingStatus], [b].[ScheduleId], [b].[TotalAmount], [b].[UserId], [u].[UserId], [u].[Address], [u].[ContactNumber], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[RoleId], [s].[ScheduleId], [f].[FlightId], [b0].[SeatId], [b0].[BookingId], [b0].[CabinId], [b0].[SeatNumber], [s].[ArrivalTime], [s].[DepartureTime], [s].[FlightId], [f].[Destination], [f].[FlightName], [f].[FlightNumber], [f].[Origin], [f].[OwnerId]
+FROM [Bookings] AS [b]
+INNER JOIN [Schedules] AS [s] ON [b].[ScheduleId] = [s].[ScheduleId]
+INNER JOIN [Flights] AS [f] ON [s].[FlightId] = [f].[FlightId]
+INNER JOIN [Users] AS [u] ON [b].[UserId] = [u].[UserId]
+LEFT JOIN [BookedSeats] AS [b0] ON [b].[BookingId] = [b0].[BookingId]
+WHERE [f].[OwnerId] = @ownerId
+ORDER BY [b].[BookingId], [s].[ScheduleId], [f].[FlightId], [u].[UserId]
+2026-06-22 16:48:27,484 [25] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (13ms) [Parameters=[@ToLower='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Address], [u].[ContactNumber], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[RoleId], [r].[RoleId], [r].[RoleName]
+FROM [Users] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[RoleId]
+WHERE LOWER([u].[Email]) = @ToLower
+2026-06-22 16:49:23,440 [3] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (74ms) [Parameters=[@ToLower='?' (Size = 4000), @ToLower1='?' (Size = 4000), @date_Date='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT [s].[ScheduleId], [s].[ArrivalTime], [s].[DepartureTime], [s].[FlightId], [f].[FlightId], [f].[Destination], [f].[FlightName], [f].[FlightNumber], [f].[Origin], [f].[OwnerId], [f0].[CabinId], [f0].[AvailableSeats], [f0].[CabinBaggage], [f0].[CabinType], [f0].[CheckInBaggage], [f0].[Price], [f0].[ScheduleId]
+FROM [Schedules] AS [s]
+INNER JOIN [Flights] AS [f] ON [s].[FlightId] = [f].[FlightId]
+LEFT JOIN [FlightCabins] AS [f0] ON [s].[ScheduleId] = [f0].[ScheduleId]
+WHERE LOWER([f].[Origin]) = @ToLower AND LOWER([f].[Destination]) = @ToLower1 AND CONVERT(date, [s].[DepartureTime]) = @date_Date AND [s].[DepartureTime] > GETUTCDATE()
+ORDER BY [s].[ScheduleId], [f].[FlightId]
+2026-06-22 16:50:22,400 [26] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (21ms) [Parameters=[@cabinId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [f].[CabinId], [f].[AvailableSeats], [f].[CabinBaggage], [f].[CabinType], [f].[CheckInBaggage], [f].[Price], [f].[ScheduleId], [s].[ScheduleId], [s].[ArrivalTime], [s].[DepartureTime], [s].[FlightId], [f0].[FlightId], [f0].[Destination], [f0].[FlightName], [f0].[FlightNumber], [f0].[Origin], [f0].[OwnerId]
+FROM [FlightCabins] AS [f]
+INNER JOIN [Schedules] AS [s] ON [f].[ScheduleId] = [s].[ScheduleId]
+INNER JOIN [Flights] AS [f0] ON [s].[FlightId] = [f0].[FlightId]
+WHERE [f].[CabinId] = @cabinId
+2026-06-22 16:50:22,534 [22] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (20ms) [Parameters=[@scheduleId='?' (DbType = Int32), @cabinId='?' (DbType = Int32), @seatNumbers1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [BookedSeats] AS [b]
+        INNER JOIN [FlightCabins] AS [f] ON [b].[CabinId] = [f].[CabinId]
+        INNER JOIN [Bookings] AS [b0] ON [b].[BookingId] = [b0].[BookingId]
+        WHERE [f].[ScheduleId] = @scheduleId AND [b].[CabinId] = @cabinId AND [b].[SeatNumber] = @seatNumbers1 AND [b0].[BookingStatus] <> N'Cancelled') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-06-22 16:50:22,602 [22] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Bookings] ([BookingDate], [BookingStatus], [ScheduleId], [TotalAmount], [UserId])
+OUTPUT INSERTED.[BookingId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-06-22 16:50:22,692 [22] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (44ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p9='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p8='?' (DbType = Int32), @p10='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p11='?' (DbType = Int32), @p12='?' (DbType = DateTime2), @p13='?' (Size = 4000), @p14='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [BookedSeats] ([BookingId], [CabinId], [SeatNumber])
+OUTPUT INSERTED.[SeatId]
+VALUES (@p0, @p1, @p2);
+UPDATE [FlightCabins] SET [AvailableSeats] = @p3, [CabinBaggage] = @p4, [CabinType] = @p5, [CheckInBaggage] = @p6, [Price] = @p7, [ScheduleId] = @p8
+OUTPUT 1
+WHERE [CabinId] = @p9;
+INSERT INTO [Payments] ([Amount], [BookingId], [PaymentDate], [RefundStatus], [TransactionStatus])
+OUTPUT INSERTED.[PaymentId]
+VALUES (@p10, @p11, @p12, @p13, @p14);
+2026-06-22 16:50:51,086 [26] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (13ms) [Parameters=[@cabinId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [f].[CabinId], [f].[AvailableSeats], [f].[CabinBaggage], [f].[CabinType], [f].[CheckInBaggage], [f].[Price], [f].[ScheduleId], [s].[ScheduleId], [s].[ArrivalTime], [s].[DepartureTime], [s].[FlightId], [f0].[FlightId], [f0].[Destination], [f0].[FlightName], [f0].[FlightNumber], [f0].[Origin], [f0].[OwnerId]
+FROM [FlightCabins] AS [f]
+INNER JOIN [Schedules] AS [s] ON [f].[ScheduleId] = [s].[ScheduleId]
+INNER JOIN [Flights] AS [f0] ON [s].[FlightId] = [f0].[FlightId]
+WHERE [f].[CabinId] = @cabinId
+2026-06-22 16:50:51,110 [23] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (19ms) [Parameters=[@scheduleId='?' (DbType = Int32), @cabinId='?' (DbType = Int32), @seatNumbers1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [BookedSeats] AS [b]
+        INNER JOIN [FlightCabins] AS [f] ON [b].[CabinId] = [f].[CabinId]
+        INNER JOIN [Bookings] AS [b0] ON [b].[BookingId] = [b0].[BookingId]
+        WHERE [f].[ScheduleId] = @scheduleId AND [b].[CabinId] = @cabinId AND [b].[SeatNumber] = @seatNumbers1 AND [b0].[BookingStatus] <> N'Cancelled') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-06-22 16:50:51,134 [26] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Bookings] ([BookingDate], [BookingStatus], [ScheduleId], [TotalAmount], [UserId])
+OUTPUT INSERTED.[BookingId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-06-22 16:50:51,158 [23] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (20ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p9='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p8='?' (DbType = Int32), @p10='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p11='?' (DbType = Int32), @p12='?' (DbType = DateTime2), @p13='?' (Size = 4000), @p14='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [BookedSeats] ([BookingId], [CabinId], [SeatNumber])
+OUTPUT INSERTED.[SeatId]
+VALUES (@p0, @p1, @p2);
+UPDATE [FlightCabins] SET [AvailableSeats] = @p3, [CabinBaggage] = @p4, [CabinType] = @p5, [CheckInBaggage] = @p6, [Price] = @p7, [ScheduleId] = @p8
+OUTPUT 1
+WHERE [CabinId] = @p9;
+INSERT INTO [Payments] ([Amount], [BookingId], [PaymentDate], [RefundStatus], [TransactionStatus])
+OUTPUT INSERTED.[PaymentId]
+VALUES (@p10, @p11, @p12, @p13, @p14);
+2026-06-22 16:51:05,684 [23] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (20ms) [Parameters=[@cabinId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [f].[CabinId], [f].[AvailableSeats], [f].[CabinBaggage], [f].[CabinType], [f].[CheckInBaggage], [f].[Price], [f].[ScheduleId], [s].[ScheduleId], [s].[ArrivalTime], [s].[DepartureTime], [s].[FlightId], [f0].[FlightId], [f0].[Destination], [f0].[FlightName], [f0].[FlightNumber], [f0].[Origin], [f0].[OwnerId]
+FROM [FlightCabins] AS [f]
+INNER JOIN [Schedules] AS [s] ON [f].[ScheduleId] = [s].[ScheduleId]
+INNER JOIN [Flights] AS [f0] ON [s].[FlightId] = [f0].[FlightId]
+WHERE [f].[CabinId] = @cabinId
+2026-06-22 16:51:05,706 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (18ms) [Parameters=[@scheduleId='?' (DbType = Int32), @cabinId='?' (DbType = Int32), @seatNumbers1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [BookedSeats] AS [b]
+        INNER JOIN [FlightCabins] AS [f] ON [b].[CabinId] = [f].[CabinId]
+        INNER JOIN [Bookings] AS [b0] ON [b].[BookingId] = [b0].[BookingId]
+        WHERE [f].[ScheduleId] = @scheduleId AND [b].[CabinId] = @cabinId AND [b].[SeatNumber] = @seatNumbers1 AND [b0].[BookingStatus] <> N'Cancelled') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-06-22 16:51:05,795 [23] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (24ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Bookings] ([BookingDate], [BookingStatus], [ScheduleId], [TotalAmount], [UserId])
+OUTPUT INSERTED.[BookingId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-06-22 16:51:05,965 [28] ERROR Microsoft.EntityFrameworkCore.Update - An exception occurred in the database while saving changes for context type 'SimplyFly.Data.SimplyFlyDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Bookings_Schedules_ScheduleId". The conflict occurred in database "SimplyFlyDb", table "dbo.Schedules", column 'ScheduleId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:01ea3566-a284-4d8e-9854-4641c076f4fd
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Bookings_Schedules_ScheduleId". The conflict occurred in database "SimplyFlyDb", table "dbo.Schedules", column 'ScheduleId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:01ea3566-a284-4d8e-9854-4641c076f4fd
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-06-22 16:51:13,407 [28] ERROR SimplyFly.Middlewares.GlobalExceptionMiddleware - An unhandled exception occurred during the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Bookings_Schedules_ScheduleId". The conflict occurred in database "SimplyFlyDb", table "dbo.Schedules", column 'ScheduleId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:01ea3566-a284-4d8e-9854-4641c076f4fd
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at SimplyFly.Repositories.Implementations.BookingRepository.CreateBookingTransactionAsync(Booking booking, List`1 seats, FlightCabin cabin, Payment payment) in D:\Visual Studio\SimplyFly\SimplyFly\Repositories\Implementations\BookingRepository.cs:line 33
+   at SimplyFly.Repositories.Implementations.BookingRepository.CreateBookingTransactionAsync(Booking booking, List`1 seats, FlightCabin cabin, Payment payment) in D:\Visual Studio\SimplyFly\SimplyFly\Repositories\Implementations\BookingRepository.cs:line 52
+   at SimplyFly.Services.Implementations.BookingService.CreateNewBookingAsync(Int32 passengerId, CreateBookingDto bookingDto) in D:\Visual Studio\SimplyFly\SimplyFly\Services\Implementations\BookingService.cs:line 47
+   at SimplyFly.Controllers.BookingsController.CreateBooking(CreateBookingDto bookingDto) in D:\Visual Studio\SimplyFly\SimplyFly\Controllers\BookingsController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at SimplyFly.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\Visual Studio\SimplyFly\SimplyFly\Middlewares\GlobalExceptionMiddleware.cs:line 22
+2026-06-22 16:52:25,225 [25] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (13ms) [Parameters=[@cabinId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [f].[CabinId], [f].[AvailableSeats], [f].[CabinBaggage], [f].[CabinType], [f].[CheckInBaggage], [f].[Price], [f].[ScheduleId], [s].[ScheduleId], [s].[ArrivalTime], [s].[DepartureTime], [s].[FlightId], [f0].[FlightId], [f0].[Destination], [f0].[FlightName], [f0].[FlightNumber], [f0].[Origin], [f0].[OwnerId]
+FROM [FlightCabins] AS [f]
+INNER JOIN [Schedules] AS [s] ON [f].[ScheduleId] = [s].[ScheduleId]
+INNER JOIN [Flights] AS [f0] ON [s].[FlightId] = [f0].[FlightId]
+WHERE [f].[CabinId] = @cabinId
+2026-06-22 16:52:25,245 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (16ms) [Parameters=[@scheduleId='?' (DbType = Int32), @cabinId='?' (DbType = Int32), @seatNumbers1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [BookedSeats] AS [b]
+        INNER JOIN [FlightCabins] AS [f] ON [b].[CabinId] = [f].[CabinId]
+        INNER JOIN [Bookings] AS [b0] ON [b].[BookingId] = [b0].[BookingId]
+        WHERE [f].[ScheduleId] = @scheduleId AND [b].[CabinId] = @cabinId AND [b].[SeatNumber] = @seatNumbers1 AND [b0].[BookingStatus] <> N'Cancelled') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-06-22 16:52:25,254 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Bookings] ([BookingDate], [BookingStatus], [ScheduleId], [TotalAmount], [UserId])
+OUTPUT INSERTED.[BookingId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-06-22 16:52:25,263 [25] ERROR Microsoft.EntityFrameworkCore.Update - An exception occurred in the database while saving changes for context type 'SimplyFly.Data.SimplyFlyDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Bookings_Schedules_ScheduleId". The conflict occurred in database "SimplyFlyDb", table "dbo.Schedules", column 'ScheduleId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:01ea3566-a284-4d8e-9854-4641c076f4fd
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Bookings_Schedules_ScheduleId". The conflict occurred in database "SimplyFlyDb", table "dbo.Schedules", column 'ScheduleId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:01ea3566-a284-4d8e-9854-4641c076f4fd
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-06-22 16:52:36,436 [25] ERROR SimplyFly.Middlewares.GlobalExceptionMiddleware - An unhandled exception occurred during the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Bookings_Schedules_ScheduleId". The conflict occurred in database "SimplyFlyDb", table "dbo.Schedules", column 'ScheduleId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:01ea3566-a284-4d8e-9854-4641c076f4fd
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at SimplyFly.Repositories.Implementations.BookingRepository.CreateBookingTransactionAsync(Booking booking, List`1 seats, FlightCabin cabin, Payment payment) in D:\Visual Studio\SimplyFly\SimplyFly\Repositories\Implementations\BookingRepository.cs:line 33
+   at SimplyFly.Repositories.Implementations.BookingRepository.CreateBookingTransactionAsync(Booking booking, List`1 seats, FlightCabin cabin, Payment payment) in D:\Visual Studio\SimplyFly\SimplyFly\Repositories\Implementations\BookingRepository.cs:line 52
+   at SimplyFly.Services.Implementations.BookingService.CreateNewBookingAsync(Int32 passengerId, CreateBookingDto bookingDto) in D:\Visual Studio\SimplyFly\SimplyFly\Services\Implementations\BookingService.cs:line 47
+   at SimplyFly.Controllers.BookingsController.CreateBooking(CreateBookingDto bookingDto) in D:\Visual Studio\SimplyFly\SimplyFly\Controllers\BookingsController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at SimplyFly.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\Visual Studio\SimplyFly\SimplyFly\Middlewares\GlobalExceptionMiddleware.cs:line 22
+2026-06-22 16:52:48,811 [30] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (15ms) [Parameters=[@cabinId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [f].[CabinId], [f].[AvailableSeats], [f].[CabinBaggage], [f].[CabinType], [f].[CheckInBaggage], [f].[Price], [f].[ScheduleId], [s].[ScheduleId], [s].[ArrivalTime], [s].[DepartureTime], [s].[FlightId], [f0].[FlightId], [f0].[Destination], [f0].[FlightName], [f0].[FlightNumber], [f0].[Origin], [f0].[OwnerId]
+FROM [FlightCabins] AS [f]
+INNER JOIN [Schedules] AS [s] ON [f].[ScheduleId] = [s].[ScheduleId]
+INNER JOIN [Flights] AS [f0] ON [s].[FlightId] = [f0].[FlightId]
+WHERE [f].[CabinId] = @cabinId
+2026-06-22 16:52:53,257 [30] ERROR SimplyFly.Middlewares.GlobalExceptionMiddleware - An unhandled exception occurred during the request.
+SimplyFly.Exceptions.CabinNotFoundException: Target cabin tier was not found.
+   at SimplyFly.Services.Implementations.BookingService.CreateNewBookingAsync(Int32 passengerId, CreateBookingDto bookingDto) in D:\Visual Studio\SimplyFly\SimplyFly\Services\Implementations\BookingService.cs:line 22
+   at SimplyFly.Controllers.BookingsController.CreateBooking(CreateBookingDto bookingDto) in D:\Visual Studio\SimplyFly\SimplyFly\Controllers\BookingsController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at SimplyFly.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\Visual Studio\SimplyFly\SimplyFly\Middlewares\GlobalExceptionMiddleware.cs:line 22
+2026-06-22 16:53:10,608 [29] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (41ms) [Parameters=[@userId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [b].[BookingId], [b].[BookingDate], [b].[BookingStatus], [b].[ScheduleId], [b].[TotalAmount], [b].[UserId], [s].[ScheduleId], [f].[FlightId], [p].[PaymentId], [b0].[SeatId], [b0].[BookingId], [b0].[CabinId], [b0].[SeatNumber], [s].[ArrivalTime], [s].[DepartureTime], [s].[FlightId], [f].[Destination], [f].[FlightName], [f].[FlightNumber], [f].[Origin], [f].[OwnerId], [p].[Amount], [p].[BookingId], [p].[PaymentDate], [p].[RefundStatus], [p].[TransactionStatus]
+FROM [Bookings] AS [b]
+INNER JOIN [Schedules] AS [s] ON [b].[ScheduleId] = [s].[ScheduleId]
+INNER JOIN [Flights] AS [f] ON [s].[FlightId] = [f].[FlightId]
+LEFT JOIN [Payments] AS [p] ON [b].[BookingId] = [p].[BookingId]
+LEFT JOIN [BookedSeats] AS [b0] ON [b].[BookingId] = [b0].[BookingId]
+WHERE [b].[UserId] = @userId
+ORDER BY [b].[BookingDate] DESC, [b].[BookingId], [s].[ScheduleId], [f].[FlightId], [p].[PaymentId]
+2026-06-22 16:53:50,541 [25] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (12ms) [Parameters=[@bookingId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [s].[BookingId], [s].[BookingDate], [s].[BookingStatus], [s].[ScheduleId], [s].[TotalAmount], [s].[UserId], [s].[PaymentId], [b0].[SeatId], [b0].[BookingId], [b0].[CabinId], [b0].[SeatNumber], [s].[Amount], [s].[BookingId0], [s].[PaymentDate], [s].[RefundStatus], [s].[TransactionStatus]
+FROM (
+    SELECT TOP(1) [b].[BookingId], [b].[BookingDate], [b].[BookingStatus], [b].[ScheduleId], [b].[TotalAmount], [b].[UserId], [p].[PaymentId], [p].[Amount], [p].[BookingId] AS [BookingId0], [p].[PaymentDate], [p].[RefundStatus], [p].[TransactionStatus]
+    FROM [Bookings] AS [b]
+    LEFT JOIN [Payments] AS [p] ON [b].[BookingId] = [p].[BookingId]
+    WHERE [b].[BookingId] = @bookingId
+) AS [s]
+LEFT JOIN [BookedSeats] AS [b0] ON [s].[BookingId] = [b0].[BookingId]
+ORDER BY [s].[BookingId], [s].[PaymentId]
+2026-06-22 16:53:50,555 [31] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@cabinId='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [f].[CabinId], [f].[AvailableSeats], [f].[CabinBaggage], [f].[CabinType], [f].[CheckInBaggage], [f].[Price], [f].[ScheduleId], [s].[ScheduleId], [s].[ArrivalTime], [s].[DepartureTime], [s].[FlightId], [f0].[FlightId], [f0].[Destination], [f0].[FlightName], [f0].[FlightNumber], [f0].[Origin], [f0].[OwnerId]
+FROM [FlightCabins] AS [f]
+INNER JOIN [Schedules] AS [s] ON [f].[ScheduleId] = [s].[ScheduleId]
+INNER JOIN [Flights] AS [f0] ON [s].[FlightId] = [f0].[FlightId]
+WHERE [f].[CabinId] = @cabinId
+2026-06-22 16:53:50,604 [31] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (32ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32), @p12='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p11='?' (DbType = Int32), @p18='?' (DbType = Int32), @p13='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p14='?' (DbType = Int32), @p15='?' (DbType = DateTime2), @p16='?' (Size = 4000), @p17='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Bookings] SET [BookingDate] = @p0, [BookingStatus] = @p1, [ScheduleId] = @p2, [TotalAmount] = @p3, [UserId] = @p4
+OUTPUT 1
+WHERE [BookingId] = @p5;
+UPDATE [FlightCabins] SET [AvailableSeats] = @p6, [CabinBaggage] = @p7, [CabinType] = @p8, [CheckInBaggage] = @p9, [Price] = @p10, [ScheduleId] = @p11
+OUTPUT 1
+WHERE [CabinId] = @p12;
+UPDATE [Payments] SET [Amount] = @p13, [BookingId] = @p14, [PaymentDate] = @p15, [RefundStatus] = @p16, [TransactionStatus] = @p17
+OUTPUT 1
+WHERE [PaymentId] = @p18;
