@@ -1,0 +1,164 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Visual Studio\\SimplyFly\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FDD85AC0-D19D-2518-84DE-539364FD1BD7}|SimplyFly\\SimplyFly.csproj|d:\\visual studio\\simplyfly\\simplyfly\\services\\implementations\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDD85AC0-D19D-2518-84DE-539364FD1BD7}|SimplyFly\\SimplyFly.csproj|solutionrelative:simplyfly\\services\\implementations\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDD85AC0-D19D-2518-84DE-539364FD1BD7}|SimplyFly\\SimplyFly.csproj|d:\\visual studio\\simplyfly\\simplyfly\\repositories\\implementations\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDD85AC0-D19D-2518-84DE-539364FD1BD7}|SimplyFly\\SimplyFly.csproj|solutionrelative:simplyfly\\repositories\\implementations\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDD85AC0-D19D-2518-84DE-539364FD1BD7}|SimplyFly\\SimplyFly.csproj|d:\\visual studio\\simplyfly\\simplyfly\\services\\interfaces\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDD85AC0-D19D-2518-84DE-539364FD1BD7}|SimplyFly\\SimplyFly.csproj|solutionrelative:simplyfly\\services\\interfaces\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDD85AC0-D19D-2518-84DE-539364FD1BD7}|SimplyFly\\SimplyFly.csproj|d:\\visual studio\\simplyfly\\simplyfly\\dtos\\usersummarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDD85AC0-D19D-2518-84DE-539364FD1BD7}|SimplyFly\\SimplyFly.csproj|solutionrelative:simplyfly\\dtos\\usersummarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDD85AC0-D19D-2518-84DE-539364FD1BD7}|SimplyFly\\SimplyFly.csproj|d:\\visual studio\\simplyfly\\simplyfly\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDD85AC0-D19D-2518-84DE-539364FD1BD7}|SimplyFly\\SimplyFly.csproj|solutionrelative:simplyfly\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDD85AC0-D19D-2518-84DE-539364FD1BD7}|SimplyFly\\SimplyFly.csproj|d:\\visual studio\\simplyfly\\simplyfly\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDD85AC0-D19D-2518-84DE-539364FD1BD7}|SimplyFly\\SimplyFly.csproj|solutionrelative:simplyfly\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDD85AC0-D19D-2518-84DE-539364FD1BD7}|SimplyFly\\SimplyFly.csproj|d:\\visual studio\\simplyfly\\simplyfly\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDD85AC0-D19D-2518-84DE-539364FD1BD7}|SimplyFly\\SimplyFly.csproj|solutionrelative:simplyfly\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDD85AC0-D19D-2518-84DE-539364FD1BD7}|SimplyFly\\SimplyFly.csproj|d:\\visual studio\\simplyfly\\simplyfly\\services\\interfaces\\iuserservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDD85AC0-D19D-2518-84DE-539364FD1BD7}|SimplyFly\\SimplyFly.csproj|solutionrelative:simplyfly\\services\\interfaces\\iuserservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{f4e46f1e-cf83-40aa-b568-a627394bc994}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminRepository.cs",
+              "DocumentMoniker": "D:\\Visual Studio\\SimplyFly\\SimplyFly\\Repositories\\Implementations\\AdminRepository.cs",
+              "RelativeDocumentMoniker": "SimplyFly\\Repositories\\Implementations\\AdminRepository.cs",
+              "ToolTip": "D:\\Visual Studio\\SimplyFly\\SimplyFly\\Repositories\\Implementations\\AdminRepository.cs",
+              "RelativeToolTip": "SimplyFly\\Repositories\\Implementations\\AdminRepository.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAA9wDkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-01T05:01:20.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminService.cs",
+              "DocumentMoniker": "D:\\Visual Studio\\SimplyFly\\SimplyFly\\Services\\Implementations\\AdminService.cs",
+              "RelativeDocumentMoniker": "SimplyFly\\Services\\Implementations\\AdminService.cs",
+              "ToolTip": "D:\\Visual Studio\\SimplyFly\\SimplyFly\\Services\\Implementations\\AdminService.cs",
+              "RelativeToolTip": "SimplyFly\\Services\\Implementations\\AdminService.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAIwFEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-01T04:41:37.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IAdminService.cs",
+              "DocumentMoniker": "D:\\Visual Studio\\SimplyFly\\SimplyFly\\Services\\Interfaces\\IAdminService.cs",
+              "RelativeDocumentMoniker": "SimplyFly\\Services\\Interfaces\\IAdminService.cs",
+              "ToolTip": "D:\\Visual Studio\\SimplyFly\\SimplyFly\\Services\\Interfaces\\IAdminService.cs",
+              "RelativeToolTip": "SimplyFly\\Services\\Interfaces\\IAdminService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-01T04:41:15.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserSummaryDto.cs",
+              "DocumentMoniker": "D:\\Visual Studio\\SimplyFly\\SimplyFly\\DTOs\\UserSummaryDto.cs",
+              "RelativeDocumentMoniker": "SimplyFly\\DTOs\\UserSummaryDto.cs",
+              "ToolTip": "D:\\Visual Studio\\SimplyFly\\SimplyFly\\DTOs\\UserSummaryDto.cs",
+              "RelativeToolTip": "SimplyFly\\DTOs\\UserSummaryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-01T04:40:09.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Visual Studio\\SimplyFly\\SimplyFly\\Program.cs",
+              "RelativeDocumentMoniker": "SimplyFly\\Program.cs",
+              "ToolTip": "D:\\Visual Studio\\SimplyFly\\SimplyFly\\Program.cs",
+              "RelativeToolTip": "SimplyFly\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-01T04:28:44.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Visual Studio\\SimplyFly\\SimplyFly\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "SimplyFly\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Visual Studio\\SimplyFly\\SimplyFly\\Controllers\\UserController.cs",
+              "RelativeToolTip": "SimplyFly\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-01T04:27:54.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\Visual Studio\\SimplyFly\\SimplyFly\\Services\\Implementations\\UserService.cs",
+              "RelativeDocumentMoniker": "SimplyFly\\Services\\Implementations\\UserService.cs",
+              "ToolTip": "D:\\Visual Studio\\SimplyFly\\SimplyFly\\Services\\Implementations\\UserService.cs",
+              "RelativeToolTip": "SimplyFly\\Services\\Implementations\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-01T04:25:32.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IUserService .cs",
+              "DocumentMoniker": "D:\\Visual Studio\\SimplyFly\\SimplyFly\\Services\\Interfaces\\IUserService .cs",
+              "RelativeDocumentMoniker": "SimplyFly\\Services\\Interfaces\\IUserService .cs",
+              "ToolTip": "D:\\Visual Studio\\SimplyFly\\SimplyFly\\Services\\Interfaces\\IUserService .cs",
+              "RelativeToolTip": "SimplyFly\\Services\\Interfaces\\IUserService .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-01T04:24:47.567Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

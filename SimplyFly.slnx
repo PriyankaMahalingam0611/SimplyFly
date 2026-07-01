@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="SimplyFly.Tests/SimplyFly.Tests.csproj" Id="29418d27-4e13-4f84-b3b6-c078215d9a4d" />
+  <Project Path="SimplyFly/SimplyFly.csproj" />
+</Solution>
