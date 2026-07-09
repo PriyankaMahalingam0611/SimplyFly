@@ -62,7 +62,7 @@ namespace SimplyFly.Middlewares
 
             var response = new
             {
-                Message = context.Response.StatusCode == (int)HttpStatusCode.InternalServerError
+                message = context.Response.StatusCode == (int)HttpStatusCode.InternalServerError
                     ? "An unexpected server error occurred."
                     : exception.Message
             };

@@ -99,6 +99,7 @@ namespace SimplyFly.Repositories.Implementations
             return await _context.Bookings
                 .Include(b => b.User)
                 .Include(b => b.BookedSeats)
+                .Include(b => b.Payment)     
                 .Include(b => b.Schedule)
                     .ThenInclude(s => s.Flight)
                 .Where(b => b.Schedule.Flight.OwnerId == ownerId)

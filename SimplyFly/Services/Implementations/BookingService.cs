@@ -114,7 +114,10 @@ namespace SimplyFly.Services.Implementations
                 DepartureTime = b.Schedule.DepartureTime,
                 TotalAmount = b.TotalAmount,
                 BookingStatus = b.BookingStatus,
-                BookedSeats = b.BookedSeats.Select(s => s.SeatNumber).ToList()
+                BookedSeats = b.BookedSeats.Select(s => s.SeatNumber).ToList(),
+                PassengerName = b.User.Name,
+                PassengerEmail = b.User.Email,
+                RefundStatus = b.Payment?.RefundStatus
             });
         }
 

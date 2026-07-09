@@ -42,7 +42,6 @@ namespace SimplyFly.Controllers
         }
 
         [HttpPost("register-staff")]
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> RegisterStaff(RegisterStaffDto staffDto)
         {
             await _authService.RegisterStaffAsync(staffDto);

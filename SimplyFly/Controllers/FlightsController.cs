@@ -51,5 +51,22 @@ namespace SimplyFly.Controllers
             await _flightService.DeleteScheduleConditionalAsync(id);
             return Ok(new { Message = "Flight schedule cancelled and dropped." });
         }
+
+        [HttpGet("my flights")]
+        [Authorize(Roles = "FlightOwner")]
+        public async Task<IActionResult> GetMyFlights()
+        {
+            int ownerId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+            var flights = await _flightService.GetFlightsByOwnerAsync(ownerId);
+            return Ok(flights);
+        }
+
+        [HttpGet("my flights/{flightId}/schedules")]
+        [Authorize(Roles = "FlightOwner")]
+        public async Task<IActionResult> GetFlightSchedules(int flightId)
+        {
+            var schedules = await _flightService.GetSchedulesByFlightAsync(flightId);
+            return Ok(schedules);
+        }
     }
 }

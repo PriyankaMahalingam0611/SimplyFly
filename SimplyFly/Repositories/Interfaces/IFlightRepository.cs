@@ -10,6 +10,8 @@ namespace SimplyFly.Repositories.Interfaces
         Task<Schedule> GetScheduleByIdAsync(int scheduleId);
         Task DeleteScheduleAsync(Schedule schedule);
         Task<IEnumerable<Schedule>> SearchSchedulesAsync(string origin, string destination, DateTime date);
-        
+        Task<IEnumerable<Flight>> GetFlightsByOwnerIdAsync(int ownerId);
+        Task<IEnumerable<Schedule>> GetSchedulesByFlightIdAsync(int flightId);
+
     }
 }

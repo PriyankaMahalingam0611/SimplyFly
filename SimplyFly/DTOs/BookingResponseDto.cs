@@ -15,5 +15,8 @@ namespace SimplyFly.DTOs
         public decimal TotalAmount { get; set; }
         public string BookingStatus { get; set; }
         public string TransactionStatus { get; set; }
+        public string PassengerName { get; set; }
+        public string PassengerEmail { get; set; }
+        public string RefundStatus { get; set; }
     }
 }

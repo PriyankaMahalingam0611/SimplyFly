@@ -49,6 +49,8 @@ namespace SimplyFly.Services.Implementations
                 UserId = user.UserId,
                 Name = user.Name,
                 Email = user.Email,
+                ContactNumber = user.ContactNumber, 
+                Address = user.Address,
                 Roles = roles,
                 Token = token,
                 TokenExpiresAt = expiresAt
@@ -97,7 +99,7 @@ namespace SimplyFly.Services.Implementations
                 PasswordHash = hashedPassword,
                 ContactNumber = staffDto.ContactNumber,
                 Address = staffDto.Address,
-                RoleId = staffDto.RoleId
+                RoleId = 2
             };
 
             await _authRepository.CreateUserAsync(newUser);

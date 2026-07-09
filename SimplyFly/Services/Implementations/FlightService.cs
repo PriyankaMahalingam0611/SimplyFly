@@ -50,11 +50,10 @@ namespace SimplyFly.Services.Implementations
         public async Task DeleteScheduleConditionalAsync(int scheduleId)
         {
             var schedule = await _flightRepository.GetScheduleByIdAsync(scheduleId);
+            if (schedule == null) throw new FlightScheduleNotFoundException();
 
-            if (schedule == null)
-                throw new FlightScheduleNotFoundException();
-
-            foreach (var Cabin in schedule.FlightCabins) { }
+            bool hasActiveBookings = schedule.Bookings.Any(b => b.BookingStatus != "Cancelled");
+            if (hasActiveBookings) throw new BookingCancellationException();
 
             await _flightRepository.DeleteScheduleAsync(schedule);
         }
@@ -77,14 +76,53 @@ namespace SimplyFly.Services.Implementations
                 Destination = s.Flight.Destination,
                 DepartureTime = s.DepartureTime,
                 ArrivalTime = s.ArrivalTime,
-                CabinOptions = s.FlightCabins.Select(c => new CabinOptionDto
+                CabinOptions = s.FlightCabins.Select(c =>
                 {
-                    CabinId = c.CabinId,
-                    CabinType = c.CabinType,
-                    Price = c.Price,
-                    AvailableSeats = c.AvailableSeats
+                    var bookedSeatNumbers = c.BookedSeats
+                        .Where(bs => bs.Booking.BookingStatus != "Cancelled")
+                        .Select(bs => bs.SeatNumber)
+                        .ToList();
+
+                    return new CabinOptionDto
+                    {
+                        CabinId = c.CabinId,
+                        CabinType = c.CabinType,
+                        Price = c.Price,
+                        AvailableSeats = c.AvailableSeats,
+                        TotalSeats = c.AvailableSeats + bookedSeatNumbers.Count,
+                        BookedSeatNumbers = bookedSeatNumbers,
+                        CheckInBaggage = c.CheckInBaggage,  
+                        CabinBaggage = c.CabinBaggage
+                    };
                 }).ToList()
             });
         }
+
+        public async Task<IEnumerable<FlightResponseDto>> GetFlightsByOwnerAsync(int ownerId)
+        {
+            var flights = await _flightRepository.GetFlightsByOwnerIdAsync(ownerId); 
+            return flights.Select(f => new FlightResponseDto
+            {
+                FlightId = f.FlightId,
+                OwnerId = f.OwnerId,
+                FlightName = f.FlightName,
+                FlightNumber = f.FlightNumber,
+                Origin = f.Origin,
+                Destination = f.Destination
+            });
+        }
+
+        public async Task<IEnumerable<ScheduleSummaryDto>> GetSchedulesByFlightAsync(int flightId)
+        {
+            var schedules = await _flightRepository.GetSchedulesByFlightIdAsync(flightId);
+            return schedules.Select(s => new ScheduleSummaryDto
+            {
+                ScheduleId = s.ScheduleId,
+                DepartureTime = s.DepartureTime,
+                ArrivalTime = s.ArrivalTime,
+                HasBookings = s.Bookings.Any(b => b.BookingStatus != "Cancelled")
+            });
+        }
+
     }
 }

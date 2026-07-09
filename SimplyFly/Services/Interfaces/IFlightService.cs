@@ -10,6 +10,8 @@ namespace SimplyFly.Services.Interfaces
         Task<Schedule> CreateScheduleAsync(CreateScheduleDto scheduleDto);
         Task DeleteScheduleConditionalAsync(int scheduleId);
         Task<IEnumerable<FlightSearchResultDto>> SearchFlightsAsync(FlightSearchRequestDto searchDto);
+        Task<IEnumerable<FlightResponseDto>> GetFlightsByOwnerAsync(int ownerId);
+        Task<IEnumerable<ScheduleSummaryDto>> GetSchedulesByFlightAsync(int flightId);
 
     }
 }
